@@ -1,0 +1,68 @@
+.form {
+  max-width: 77rem;
+  text-align: center;
+  margin: 0 auto 9.6rem;
+  padding: 0 5rem;
+  &-heading {
+    @include heading(1rem);
+    font-weight: 500;
+    font-size: 4.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &-separator {
+    border-top: 1px solid #bbb;
+    max-width: 46rem;
+    margin: 0 auto;
+    margin-bottom: 2.8rem;
+  }
+
+  &-subheading {
+    @include subheading(10rem);
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: none;
+    width: 90%;
+    margin: 0 auto 3.6rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    row-gap: 5rem;
+    margin-bottom: 8.6rem;
+  }
+
+  &__input-container {
+    position: relative;
+  }
+
+  &-input {
+    width: 100%;
+    background-color: $form-input-grey;
+    border-radius: 20px 0;
+    padding: 0.5rem 0 0.3rem 2rem;
+    font-size: 1.8rem;
+    line-height: 3;
+    border: 3px solid transparent;
+    &-error {
+      @include paragraph();
+      position: absolute;
+      color: $color-error-red;
+      bottom: -50%;
+      animation: fade-in 0.5s;
+    }
+  }
+
+  &__input-container--email {
+    grid-column: 1 / -1;
+  }
+
+  &-submit-btn {
+    @include btn();
+    padding: 1.6rem 5.4rem;
+    border-radius: 0px 0px 20px 0px;
+  }
+}

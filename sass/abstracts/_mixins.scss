@@ -1,0 +1,42 @@
+@mixin heading($mar-bottom: 0) {
+  color: $color-main-black;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: $mar-bottom;
+  text-transform: capitalize;
+}
+
+@mixin subheading($mar-bottom: 0) {
+  color: $color-dark-grey;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: $mar-bottom;
+}
+
+@mixin paragraph($mar-bottom: 0) {
+  font-family: 'Open Sans';
+  color: $color-dark-grey;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-bottom: $mar-bottom;
+}
+
+@mixin btn() {
+  font-family: 'Open Sans';
+  background: $color-main-green;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+  border: 5px solid $color-main-green;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-main-green;
+  }
+}
+
+@mixin btn--active() {
+}

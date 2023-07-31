@@ -1,0 +1,29 @@
+@import './base/base';
+
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './animations/fade-in';
+@import './animations/fade-in-out';
+@import './animations/spin';
+@import './animations/show-blog';
+
+@import './components/general';
+@import './components/links';
+@import './components/loader';
+@import './components/confetti-particle';
+
+@import './sections/main-nav';
+@import './sections/hero';
+@import './sections/services';
+@import './sections/about-us';
+@import './sections/completed-works';
+@import './sections/testimonials';
+@import './sections/latest-news';
+@import './sections/sign-up';
+@import './sections/footer';
+
+@import './components/modal';
+
+@import './components/helpers';
+@import './queries/queries';

@@ -1,0 +1,99 @@
+.testimonials {
+  margin-bottom: 20rem;
+  &-subheading {
+    @include subheading(0);
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &-heading {
+    @include heading(10rem);
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+
+.carousel {
+  position: relative;
+  height: 26rem;
+  margin: 0 auto;
+  &__card {
+    position: relative;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+    padding: 4rem 4rem 6rem 10rem;
+    height: 100%;
+
+    &-container {
+      position: absolute;
+      width: 45%;
+      height: 60%;
+      top: 0%;
+      transition: transform 1s;
+    }
+    &-heading {
+      @include heading(1rem);
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      &-position {
+        color: $color-dark-grey;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.5;
+      }
+    }
+
+    &-quote {
+      position: absolute;
+      color: $color-decore-brown;
+      font-weight: 700;
+      font-size: 9.6rem;
+      font-family: 'Open Sans', sans-serif;
+      right: 10%;
+      top: 0;
+    }
+
+    &-paragraph {
+      @include paragraph(0);
+    }
+
+    &-client-avatar {
+      position: absolute;
+      left: -10%;
+      top: 20%;
+      border-radius: 30px 0;
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    width: 10rem;
+    display: flex;
+    justify-content: space-between;
+    top: -35%;
+    right: 0%;
+  }
+
+  &-btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    stroke: $color-white;
+    transition: all 0.2s;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    font-size: 2rem;
+    color: $color-dark-grey;
+    cursor: pointer;
+    &:active,
+    &:hover {
+      background-color: $color-main-green;
+      color: $color-white;
+    }
+  }
+}

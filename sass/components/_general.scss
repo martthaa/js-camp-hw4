@@ -1,0 +1,26 @@
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.decore {
+  position: absolute;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+.content {
+  animation: fade-in 1s;
+}
+
+.section-hidden {
+  opacity: 0;
+}
+
+section {
+  transition: all 0.5s;
+}

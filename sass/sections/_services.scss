@@ -1,0 +1,98 @@
+.services {
+  padding: 117px 0 135px;
+
+   .title{
+    color: #646464;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.2px;
+  }
+
+   .subtitle{
+    padding: 20px 0 40px;
+    color: #212121;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 78px;
+   }
+  
+}
+
+  .card_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .card img {
+      width: 65px;
+      height: 65px;
+      margin-top: 25px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .card {
+      align-items: self-start;
+      margin-bottom: 35px;
+      display: flex;
+      flex: none;
+      width: 27%;
+      padding: 15px 30px 20px 30px;
+      background: #FFFFFF;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+      border-radius: 60px 0px;
+      flex-direction: row;
+      justify-content: center;
+
+      .card_content span {
+        color: #212121;
+        font-family: Open Sans;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 78px; 
+      }
+
+      .card_content p{
+        color: #646464;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; 
+        
+    }
+  }
+}
+
+.filter {
+  gap: 60px;
+  display: flex;
+  margin-bottom: 100px;
+
+  .filter_button {
+    min-width: 18rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    color: #ffffff;
+    background-color: #37806B;
+    border: 5px solid #37806B;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    filter_button__active {
+      color: #37806B;
+      background-color: white;
+      border: 5px solid #37806B;
+    }
+  }
+}

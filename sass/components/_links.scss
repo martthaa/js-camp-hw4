@@ -1,0 +1,35 @@
+.link:link,
+.link:visited {
+  color: $color-main-black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: $color-main-green;
+  border: 2px solid $color-main-green;
+}
+
+.link--sign-up:link,
+.link--sign-up:visited {
+  background-color: $color-main-brown;
+  color: $color-white;
+  border-radius: 15px 0px;
+  padding: 0.5rem 1.8rem;
+  border: 2px solid $color-main-brown;
+  transition: all 0.2s;
+}
+
+.link--sign-up:hover,
+.link--sign-up:active {
+  background-color: $color-white;
+  color: $color-main-brown;
+}
