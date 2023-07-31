@@ -12,10 +12,10 @@ To access the landing page you need to download the project and open the index.h
 
 # API
 
-'Services' section API url https://dummyjson.com/products:
-Also added 'Map' section using API url: https://snazzymaps.com/
+'Services' section  using API [url](https://dummyjson.com/products:)\
+Also added 'Map' section using API [url](https://snazzymaps.com/)
 
-<details> 
+<details>
   
 ![Опис](imgs/review/screen1.jpg)
 ![Опис](imgs/review/screen2.jpg)
